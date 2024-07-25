@@ -14,8 +14,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Route>
+    <Router>
       <App />
-    </Route>
+    </Router>
   </React.StrictMode>,
 )
