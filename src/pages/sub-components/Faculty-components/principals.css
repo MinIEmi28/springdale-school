@@ -1,0 +1,130 @@
+/* .changeable {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    box-shadow: none;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: 380px;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.detail.selected {
+    color: white;
+    background-color: red;
+}
+
+@media (max-width : ) */
+.changeable {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    box-shadow: none;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: 260px;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.detail.selected {
+    color: white;
+    background-color: rgb(255, 174, 0);
+}
+
+/* Media Queries */
+@media (max-width: 1350px) {
+    .why-choose-us .why-we-are-best {
+        flex-wrap: wrap;
+    }
+    .details-section {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .changeable .d-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .our-company-growth {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .changeable .detail {
+        width: 98.5%;
+        margin-top: 10px;
+    }
+    .changeable .image-section {
+        width: 100%;
+    }
+    .changeable .image-section img {
+        width: 100%;
+        height: auto;
+    }
+    .details-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .changeable {
+        display: flex;
+        flex-direction: row;
+    }
+    .our-company-growth {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* 
+@media (max-width: 670px) {
+    .why-choose-us .why-we-are-best .flex-1 {
+        flex-wrap: wrap;
+    }
+    .our-company-growth .flex-2 {
+        flex-wrap: wrap;
+    }
+    .our-company-growth .card {
+        width: 100%;
+    }
+} */

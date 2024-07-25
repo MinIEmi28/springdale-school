@@ -1,0 +1,39 @@
+/* details.css */
+.details-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(255, 217, 0); /* Set the background color to yellow */
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    text-align: center;
+    /* Remove background color from detail-item */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.icon {
+    font-size: 2rem; /* Adjust icon size as needed */
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 2rem;
+    color: #555;
+}

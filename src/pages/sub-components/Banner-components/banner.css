@@ -1,0 +1,155 @@
+
+.container-banner {
+    width: 100%;
+    height: 32rem;
+    background-color: #cccccc5c;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+}
+
+.container-banner::after {
+    background-color: #cccccc5c;
+}
+
+.container-banner .banner {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+    z-index : 1;
+    
+}
+
+.container-banner .banner .slide {
+    width: 100%;
+    height: 100%;
+    /* height: 1vw; */
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    z-index: 0;
+}
+.container-banner .banner .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+.container-banner .banner #slide1 {
+    /* background-image: linear-gradient(to top, rgba(237, 234, 234, 1), rgba(237, 234, 234, 0.4), rgba(237, 234, 234, 0.2), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0)), */
+    background-image: url('./banners/banner5.png');
+
+}
+
+.container-banner .banner #slide2 {
+    /* background-image: linear-gradient(to top, rgba(237, 234, 234, 1), rgba(237, 234, 234, 0.4), rgba(237, 234, 234, 0.2), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0)),
+    url('./banners/beauty_products.jpg'); */
+    background-image: url('./banners/banner1.png');
+}
+
+.container-banner .banner #slide3 {
+    /* background-image: linear-gradient(to top, rgba(237, 234, 234, 1), rgba(237, 234, 234, 0.4), rgba(237, 234, 234, 0.2), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0)),
+    url('./banners/shop_books.jpg'); */
+    background-image: url('./banners/banner3.png');
+}
+
+.container-banner .banner #slide4 {
+    /* background-image: linear-gradient(to top, rgba(237, 234, 234, 1), rgba(237, 234, 234, 0.4), rgba(237, 234, 234, 0.2), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0)),
+    url('./banners/gaming_essentials.jpg'); */
+    background-image: url('./banners/banner4.png');
+}
+
+.container-banner .banner #slide5 {
+    /* background-image: linear-gradient(to top, rgba(237, 234, 234, 1), rgba(237, 234, 234, 0.4), rgba(237, 234, 234, 0.2), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0), rgba(255, 181, 237, 0)),
+    url('./banners/new_toys.jpg'); */
+    background-image: url('./banners/banner2.png');
+}
+
+/* .container {
+    width: calc(100vw - 10px);
+    margin-left: 5px;
+    margin-right: 5px; 
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+} */
+
+.container-banner .banner-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    align-content: baseline;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    top: 356px;
+    transform: translateY(-50%);
+
+}
+
+.container-banner .banner-nav button {
+    /* background-color: transparent; */
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.339),rgba(0, 0, 0, 0.339),rgba(0, 0, 0, 0.339),rgba(0, 0, 0, 0.339));
+    border: none;
+    height: 28vh;
+    width: 4rem;
+    z-index: 3;
+    
+}
+
+.container-banner .banner-nav button:focus {
+    border: 1px solid rgb(18, 14, 26);
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255);
+}
+.welcome{
+    background-color: white;
+    padding: 20px;
+}
+.welcome p{
+    margin-bottom: 0;
+}
+
+@media (max-width : 480px){
+    .container-banner {
+        height: 14rem;
+    /* }.container-banner .banner-nav{
+        position: absolute;*/
+        
+    } 
+    .container-banner .banner-nav button {
+        height: 20vh;
+    }
+}
+@media (min-width :481px) and (max-width : 700px){
+    /* .container-banner.banner-nav{
+        position: absolute;
+        top:70%
+    } */
+    .container-banner  {
+        height: 16rem;
+    }
+    .container-banner .banner-nav button {
+        height: 20vh;
+    }
+}
+@media (min-width : 701px) and (max-width : 1200px) {
+    .container-banner{
+        height: 22rem;
+    }
+    .container-banner .banner-nav button {
+        height: 20vh;
+    }
+    /* .container-banner .banner {
+        height: 70%;
+    }    */
+}

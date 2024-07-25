@@ -1,0 +1,37 @@
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    text-align: justify;
+}
+  
+  .white {
+    background-color: white;
+  }
+  
+  .sec-heading {
+    color: red;
+    font-size: 1em;
+  }
+  
+  .client-feedback {
+    padding-bottom: 1rem; /* Adjusted for pb-4 */
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .p-2 {
+    padding: 0.5rem; /* Adjusted for p-2 */
+  }
+  
+  .mt-5 {
+    margin-top: 3rem; /* Adjusted for mt-5 */
+  }
+  

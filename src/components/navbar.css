@@ -1,0 +1,80 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 236px;
+}
+
+/* Custom styles for the Navbar */
+/* Ensure the navbar has relative positioning */
+.navbar-container {
+    position: relative;
+}
+
+/* Position the hamburger menu */
+.navbar-toggler {
+    position: absolute;
+    top: 1rem; /* Adjust as needed */
+    right: 1rem; /* Adjust as needed */
+    border: none;
+}
+
+/* Side panel styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hide off-screen initially */
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 999; /* Ensure it appears on top */
+}
+
+.sidebar.open {
+    right: 0; /* Slide in */
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* Styles for collapse on small screens */
+.navbar-collapse {
+    display: none; /* Hide the navbar-collapse by default */
+}
+
+/* Show sidebar only on small screens */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none; /* Hide default navbar on small screens */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show hamburger menu on small screens */
+    }
+
+    .sidebar {
+        display: block; /* Show sidebar on small screens */
+    }
+}
+
+/* Show default navbar on larger screens */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: block; /* Show navbar on larger screens */
+    }
+    
+    .sidebar {
+        display: none; /* Hide sidebar on larger screens */
+    }
+}

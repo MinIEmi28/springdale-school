@@ -1,0 +1,73 @@
+.curriculum{
+    display: flex;
+    flex-direction: row;
+}
+.max-width{
+    max-width: 70%;
+}
+.curriculum  .p-2{
+    width: 33%;
+    height: 220px;
+}
+.curriculum .p-2 .card{
+    height: 100%;
+
+}
+.sec-heading{
+    color: red;
+}
+.card:hover{
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 500px) {
+    .max-width{
+        width: 100%;
+    }
+    .max-width .card{
+        width: 100%;
+    }
+ }
+ @media  (max-width: 720px){
+    .max-width{
+        max-width: 80px;
+    }
+ }
+ @media  (max-width: 900px){
+    .curriculum{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .curriculum  .p-2{
+        width: 100%;
+        height: auto;
+    }
+ }
+@media  (max-width : 1300px){
+    /* .max-width{
+        max-width: 50%;
+    } */
+    .curriculum{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .curriculum .p-2{
+        /* width: 100%; */
+        height: auto;
+    }
+    /* .infrastructure{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-head, .sec-tail{
+        width: 100%;
+    }
+    .sec-tail{
+        margin-top: 0;
+    }
+    .sec-head .sec-heading, .sec-head h3, .sec-tail p {
+        text-align: center;
+    } */
+}
