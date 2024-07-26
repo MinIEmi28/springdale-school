@@ -36,8 +36,8 @@
 
 // export default App
 import React from 'react';
-// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Academics from './pages/Academics';
@@ -55,7 +55,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <ContactFormProvider>
       <AdmissionFormProvider>
@@ -74,7 +74,7 @@ const App = () => {
         </AdmissionFormProvider>
       </ContactFormProvider>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 };
 
