@@ -10,7 +10,7 @@ import App from './App.jsx'
 // import Students from './pages/Students';
 // import Gallery from './pages/Gallery';
 // import ContactUs from './pages/ContactUs';
-import './assets/index.css'
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
